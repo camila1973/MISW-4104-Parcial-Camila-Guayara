@@ -1,0 +1,8 @@
+.navbar {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+  text-align: center;
+}
+.logo {
+  max-height: 50px;
+}

@@ -1,31 +1,30 @@
 <div class="container-fluid">
-  <div class="col-6">
-    <table class="table">
-      <thead>
-        <tr>
-          <th class="h4">N </th>
-          <th class="h4">Marca </th>
-          <th class="h4">Linea</th>
-          <th class="h4">Referencia</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let c of vehiculos; let i = index">
-          <td>
-            <dd>{{i+1}}</dd>
-          </td>
-          <td>
-            <dd>{{c.marca}}</dd>
-          </td>
-          <td>
-            <dd>{{c.linea}}</dd>
-          </td>
-          <td>
-            <dd>{{c.referencia}}</dd>
-          </td>
-      </tr>
+  <div class="table-container">
+    <!-- Tabla de vehículos -->
+    <div class="table-responsive col-8">
+      <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Línea</th>
+            <th scope="col">Modelo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let c of vehiculos; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ c.marca }}</td>
+            <td>{{ c.linea }}</td>
+            <td>{{ c.modelo }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-      </tbody>
-    </table>
+    <!-- Totales por marca alineados con la tabla -->
+    <div *ngFor="let marca of getMarcas()">
+      <p>Total {{ marca }}: {{ totales[marca] }}</p>
+    </div>
   </div>
 </div>

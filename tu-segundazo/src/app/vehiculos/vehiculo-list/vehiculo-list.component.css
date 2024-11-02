@@ -1,0 +1,21 @@
+/* Estilo general de la tabla */
+.table-container{
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* Encabezado de la tabla */
+thead th {
+  background-color: #343a40;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+tbody td {
+  padding: 8px;
+  border-bottom: 1px solid #dee2e6;
+}
