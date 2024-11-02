@@ -5,7 +5,7 @@ export class Vehiculo {
   referencia: string;
   modelo: number;
   kilometraje: number;
-  color: number;
+  color: string;
   imagen: string;
 
   constructor(
@@ -15,7 +15,7 @@ export class Vehiculo {
     referencia: string,
     modelo: number,
     kilometraje: number,
-    color: number,
+    color: string,
     imagen: string
   ) {
     this.id = id;
